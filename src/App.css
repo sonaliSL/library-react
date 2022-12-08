@@ -1,38 +1,66 @@
+body {
+	height: 100vh;
+	width: 100vw;
+}
+
+header {
+	font-size: xx-large;
+	margin: 20px;
+}
+.Search {
+	height: 50px;
+	width: 100%;
+	margin: auto;
+}
+
 .App {
-  text-align: center;
+	height: 100%;
+	width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.PageContent {
+	display: flex;
+	/* align-items: center; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Library {
+	display: flex;
+	align-content: space-between;
+	width: 70%;
+	height: 80%;
+	flex-wrap: wrap;
+	/* margin: auto; */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Library .minimised {
+	display: flex;
+	/* align-content: space-between; */
+	width: 50%;
+	/* flex-wrap: wrap; */
 }
 
-.App-link {
-  color: #61dafb;
+.Book {
+	border: 1px solid black;
+	margin: 2px;
+	width: 150px;
+	cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Book img {
+	height: 150px;
+	max-width: 100px;
+	margin-top: 5px;
+}
+
+.SelectedBook .open {
+	width: 30%;
+}
+
+.SelectedBook img {
+	height: 300px;
+}
+
+.SelectedBook {
+	width: 0px;
+	background-color: black;
 }
